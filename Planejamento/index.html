@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="javascript.js"></script>
+  <title>Planejamento de Testes</title>
+</head>
+<body>
+  <header>
+		<h1> TESTES DE FRONT-END </h1>
+		<nav>
+			<ul>
+				<li> <button>
+          <a class="ahref" href="../index.html" style="text-decoration:none"> Início </a>
+      </button> </li>
+			</ul>
+		</nav>
+		</header>
+  
+  <main>
+    <section>
+      <h2> | 1° Etapa | O que será testado?</h2>
+      <p>Descreva aqui os principais componentes, funcionalidades ou aspectos do sistema que serão testados. Por exemplo, formulários de login, navegação entre páginas, integração com APIs, responsividade em diferentes dispositivos, etc.</p>
+ 
+    
+  
+      <h2> | 2° Etapa | Quais dados serão monitorados? </h2>
+      <p>Especifique os dados ou métricas que serão monitorados durante os testes. Isso pode incluir tempos de resposta, erros ocorridos, performance, consumo de recursos (CPU, memória), entre outros. Lembre-se de definir quais dados são relevantes para avaliar a qualidade e o desempenho do sistema.</p>
+  
+    
+ 
+      <h2> | 3° Etapa | Criar o seu cronograma </h2>
+      <p>Defina um cronograma para realizar os testes. Você pode dividir os testes em fases ou iterações e estabelecer prazos para cada etapa. Certifique-se de considerar o tempo necessário para a preparação dos ambientes de teste, a execução dos testes em si, a análise dos resultados e a correção de problemas identificados.</p>
+ 
+    
+
+      <h2>| 4° Etapa | Crie seu planejamento </h2>
+      <ul>
+        <li>
+          <h4> Modelo </h4> 
+          <p> É importante definir e incluir a estrutura geral do documento, informações como nome do sistema, aplicativo ou produto que será testado.</p>
+        </li>
+        <li>
+          <h4> Introdução </h4>
+          <p> Resumo sobre o sistema, aplicativo ou produto mencionando seus detalhes.</p>
+        </li>
+        <li>
+          <h4> Objetivos </h4>
+          <p>Descrição dos objetos que espera ser abordados nos testes, para garantir a qualidade do front-end, sendo específicos e alinhados.</li>
+        </li>
+        <li>
+          <h4> Escopo Geral </h4>
+          <p> Aréa de identificação dos componentes,funcionalidades do sistema, interações e interface fazendo uma abordagem geral do que foi focado e eficaz.
+          </p>
+        </li>
+        <li>
+          <h4> Estratégia de Teste</h4>
+          <p> Explicação detalhada dos testes,recursos, técnicas e ferramentas que foram utilizadas.</p>
+        </li>
+        <li>
+          <h4> Ferramentas</h4>
+          <p> Lista de ferramentas a serem utilizadas para realizar os testes, podendo fornecer instruções e configurações de sua utilização</p>
+        </li>
+        <li>
+          <h4> Equipe </h4>
+          <p> Descrição da equipe responsável pelos testes de front-end</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+    
+  <main>
+		<section class="sectiondois">
+			<div class="meio">
+			<h2> Crie seu planejamento aqui </h2>
+			</div>
+			<form id="formCadastro">
+				      <label for="txtTeste">Modelo</label>
+              <br>
+            	<input class="input" type="text" id="txtModelo" placeholder="Ex: Software ou Site " required>
+            	<br>
+            	<br>
+             <label for="txtIntroducao">Introdução</label>
+			      	<br>
+				      <input class="input" type="text" id="txtIntroducao" placeholder="Ex: Detalhes do Site" required>
+            	<br>
+            	<br>
+            	<label for="txtObjetivos">Objetivos </label>
+            	<br>
+            	<input class="input" type="text" id="txtObjetivos" placeholder="Ex: Descrição" required>
+            	<br>
+            	<br>
+            	<label for="txtEscopo">Escopo Geral </label>
+            	<br>
+            	<input class="input" type="text" id="txtEscopo" placeholder="Ex: Abordagem geral do site" required>
+            	<br>
+              <br>
+              <label for="txtEstrategia">Estratégia de Teste</label>
+            	<br>
+            	<input class="input" type="text" id="txtEstrategia" placeholder="Ex: Estratégias utilizadas" required>
+            	<br>
+              <br>
+              <label for="txtFerramentas">Ferramentas</label>
+            	<br>
+            	<input class="input" type="text" id="txtFerramentas" placeholder="Ex: Ferramentas/Programas" required>
+            	<br>
+              <br>
+              <label for="txtEquipe">Equipe</label>
+            	<br>
+            	<input class="input" type="text" id="txtEquipe" placeholder="Ex: Descrição da Equipe" required>
+            	<br>
+              <br>
+              <div class="meio">
+              <button class="buttonmeio" type="submit" onclick="preencheObjeto()">Enviar Planejamento</button>
+              </div>
+            	<br>
+			</form>
+		</section>
+
+		<section class="sectiondois">
+			<br>
+			<div class="meio">
+        	<button onclick="mostrarTeste()">Meu planejamento</button>
+			</div>
+			<br>
+        	<label id="lblMostrarCarro"></label>
+			<br>
+    </section>
+    
+  </main>
+  
+  <main>
+    <section>
+      <p> Dica: Documente todo seu planejamento, oferecendo informações claras e objetivas, pois são destinadas à equipe que realizará o teste. </p>
+      <p> Clique <a class="ahref" href="https://www.ibm.com/docs/pt-br/elms/elm/6.0?topic=sections-test-plan-template-reference" style="text-decoration:none"  target="_blank"> <font color="red"> aqui </font>  </a> e acesse o modelo de referência de plano de teste sugerido pela IBM (International Business Machines Corporation). </p>
+    </section>
+  </main>
+
+  <footer>
+		<p>&copy; Site criado por Eduardo Melo - Since 2023 - Todos os direitos reservados ao SENAI </p>
+	</footer>
+</body>
+</html>

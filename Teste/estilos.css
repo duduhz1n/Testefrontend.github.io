@@ -1,0 +1,204 @@
+/* Estilos básicos */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	background-image:url("fundo.jpg");
+}
+
+/* Estilos para o cabeçalho */
+header {
+	background-color: #2e2e2e;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	font-family: bold 16px sans-serif;
+}
+
+h1 {
+	margin: 0;
+	align-items: center;
+	color: white;
+}
+
+nav ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 100;
+}
+
+nav li {
+	margin: 0 10px;
+	min-width: 100px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+section {
+	background-color: #2e2e2e;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	width: 1000px;
+	color: white;
+}
+
+
+
+section ul {
+	margin-top: 0;
+}
+
+/* Estilos para o rodapé */
+footer {
+	background-color: #2e2e2e;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Para deixar a imagem responsiva */
+.responsive-img {
+	max-width: 100%;
+	height: auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #444;
+}
+
+.iconeIMG{
+	width: 40px;
+	height: 40px;
+}
+
+.meio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* BOTAO */
+
+button {
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5;
+	text-decoration: none;
+	text-transform: uppercase;
+	outline: 0;
+	border: 0;
+	padding: 1rem;
+  }
+  
+  button:before {
+	background-color: #fff;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	margin-right: 10px;
+	transition: all .42s cubic-bezier(.25,.8,.25,1);
+	width: 0;
+  }
+  
+  button:hover:before {
+	background-color: #fff;
+	width: 3rem;
+  }
+
+  .ahref {
+	  color:white;
+  }
+
+.buttonmeio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* INPUT */
+
+.input {
+	max-width: 1000px;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+	outline: none;
+	color: dimgray;
+  }
+  
+  .input:invalid {
+	animation: justshake 0.3s forwards;
+	color: red;
+  }
+  
+  @keyframes justshake {
+	25% {
+	  transform: translateX(5px);
+	}
+  
+	50% {
+	  transform: translateX(-5px);
+	}
+  
+	75% {
+	  transform: translateX(5px);
+	}
+  
+	100% {
+	  transform: translateX-(5px);
+	}
+  }

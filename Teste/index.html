@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilos.css"/>
+		<script src="javascript.js"></script>
+		<title>Caso de Teste Front-End</title>
+</head>
+<body>
+	<header>
+		<h1> TESTES DE FRONT-END </h1>
+		<nav>
+			<ul>
+				<li> <button>
+					<a class="ahref" href="../index.html" style="text-decoration:none"> Início </a>
+				</button> </li>
+			</ul>
+		</nav>
+		</header>
+	<main>
+		<section>
+			<div class="meio">
+			<h2> Caso de Teste </h2>
+			</div>
+			<form id="formCadastro">
+				<label for="txtTeste">Teste:</label>
+            	<br>
+            	<input class="input" type="text" id="txtTeste" placeholder="Ex: Salvar planejamento" required>
+            	<br>
+            	<br>
+            	<label for="txtEntrada">Entrada:</label>
+				<br>
+				<input class="input" type="text" id="txtEntrada" placeholder="Ex: Selecionar opção Salvar" required>
+            	<br>
+            	<br>
+            	<label for="txtResultesperado">Resultado Esperado: </label>
+            	<br>
+            	<input class="input" type="text" id="txtResultesperado" placeholder='Ex: Aparecer uma mensagem "planejamento salvo com sucesso."' required>
+            	<br>
+            	<br>
+            	<label for="txtResultado">Resultado: (<font color="green">Aprovado</font> ou <font color="red">Reprovado</font>) </label>
+            	<br>
+            	<input class="input" type="text" id="txtResultado" placeholder="Ex: Aprovado ou Reprovado" required>
+            	<br>
+            	<br>
+            	<button class="buttonmeio" type="submit" onclick="preencheObjeto()">Enviar Teste</button>
+            	<br>
+			</form>
+		</section>
+
+		<section>
+			<br>
+			<div class="meio">
+        	<button onclick="mostrarTeste()">Mostrar Todos Testes</button>
+			</div>
+			<br>
+        	<label id="lblMostrarCarro"></label>
+			<br>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Site criado por Eduardo Melo - Since 2023 - Todos os direitos reservados ao SENAI </p>
+	</footer>
+<body>
+</html>
+			
+	
